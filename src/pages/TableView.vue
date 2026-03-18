@@ -28,6 +28,7 @@
               <td>{{ record.city }}</td>
               <td>{{ record.date }}</td>
               <td>
+                <a :href="`#/edit/${record.id}`" class="btn btn-edit">Edit</a>
                 <button @click="deleteRecord(record.id)" class="btn btn-delete">Delete</button>
               </td>
             </tr>
@@ -141,6 +142,18 @@ export default {
 
 .btn-danger:hover {
   background-color: #c0392b;
+}
+
+.btn-edit {
+  background-color: #27ae60;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  margin-right: 0.3rem;
+}
+
+.btn-edit:hover {
+  background-color: #229954;
 }
 
 .btn-delete {

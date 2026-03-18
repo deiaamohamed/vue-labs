@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from './pages/Home.vue'
 import AddForm from './pages/AddForm.vue'
 import TableView from './pages/TableView.vue'
+import EditForm from './pages/EditForm.vue'
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: '/table',
     name: 'TableView',
     component: TableView
+  },
+  {
+    path: '/edit/:id',
+    name: 'EditForm',
+    component: EditForm
   }
 ]
 
